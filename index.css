@@ -1,0 +1,179 @@
+.navbar {
+    background: linear-gradient(to right,pink,orange);
+    color: rgb(8, 0, 0);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 20px;
+    color: rgb(9, 0, 0);
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(7, 0, 0);
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: white;
+  } 
+  
+  .menu{
+    display: none;
+    font-size: 16px;
+    color: rgb(5, 0, 0);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .menu{
+      display: block;
+    }
+  
+    .nav-links{
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 50px;
+      background: #222;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+  }
+button:hover{
+background: linear-gradient(135deg, #efae4c, #ef98c7)
+}
+header {
+    background: linear-gradient(to right,orange,pink);
+    padding: 50px;    
+}
+header h1{
+    font-size: 50px;
+}
+section {
+    padding: 50px;
+}
+.services h2{
+    font-size: 40px;
+}
+.services, .learn, .discount, .testimonials, .contact {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.services h2, .learn h2, .discount h2, .testimonials h2, .contact h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services .cards, .learn .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.services .card, .learn .category {
+    flex-wrap: wrap;
+    max-width: 200px;
+    max-height: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    text-align: center;
+    border: 2px solid;
+}
+
+.services .card img, .learn .category img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.discount {
+    background-image: url(./p5.png);
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories input:hover{
+    border-color:rgb(224, 134, 209);
+    background-color: rgb(218, 149, 203);
+}
+.categories input{
+    border-color: #ef98c7;
+}
+.var{
+    background: linear-gradient(to right,orange,pink);
+    display: flex;
+}
+.container1{
+    border: 3px solid rgb(210, 202, 202);
+    box-shadow: 10px 10px 10px;
+    justify-content: center;
+}
+
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px transparent;
+  background-image: url(./footer.png);
+  flex-direction: column;
+}
+.contact form{
+  margin: auto;
+}
+footer{
+  text-align: center;
+  background: linear-gradient(to right,orange,pink);
+  color: white;
+}
+.testimonials{
+  background-image: url(./p5.png);
+}
+.cards{
+  animation: fadeIn 3s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-delay: 0;
+}
+
+@keyframes fadeIn {
+  0%{
+    transform: translate(-50px);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0);
+    opacity: 1;
+  }
+  }
+
+.cards .card:hover{
+  background-color: grey;
+}
+

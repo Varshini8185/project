@@ -75,6 +75,22 @@ header {
 header h1{
     font-size: 50px;
 }
+.hed{
+  animation: ZoomIn 3s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-delay: 0;
+}
+@keyframes ZoomIn {
+  from{
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+  }
 section {
     padding: 50px;
 }
@@ -177,3 +193,13 @@ footer{
   background-color: grey;
 }
 
+.categories a{
+  text-decoration: none;
+  color: black;
+  border: 2px solid rgb(238, 114, 135);
+  text-align: center;
+  padding: 10px;
+}
+.categories a:hover{
+  background: linear-gradient(to right,orange,pink);
+}
